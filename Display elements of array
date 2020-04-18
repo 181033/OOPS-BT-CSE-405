@@ -1,0 +1,37 @@
+/*write a program to display element of array */
+#include <iostream>
+using namespace std;
+
+class student
+{
+	int m[5],i;
+	
+public:
+	void getdata();
+	void display();
+};
+
+
+ void student::getdata()
+ {
+ cout<<"enter elements-";
+   for(i=0;i<5;i++)
+ cin>>m[i];
+ 
+ }
+
+ void student::display()
+{ 
+	cout<<"elements of array is-"<<endl;
+    for(i=0;i<5;i++){
+   cout<<i<<"element is-"<<m[i]<<endl;
+  }
+	}
+	
+
+int main()
+ { student stu;
+   stu.getdata();
+   stu.display();
+	return 0;
+}
